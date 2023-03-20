@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPW 5.4</title>
+    <style>
+        img.x1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+        img.x2 {
+            position: absolute;
+            left: 0;
+            top: 100;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <b>catatan:</b> browser jadul tidak mendukung properti "z-index"
+    </p>
+    <h1>sepertinya heading ini terhalang gambar</h1>
+    <img class="x1" src="gif1.gif" width="100" height="100">
+    <p>
+        z-index default adalah 0
+        z-index 1 memiliki prioritas tinggi
+        z-index -1 memiliki prioritas rendah
+    </p>
+    <img class="x2" src="gif1.gif" width="100" height="100">
+    <p>
+        <br>paragraf ini tidak terhalang gambar
+    </p>
+</body>
+</html>
